@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deadlock Farm Mastery Wiki</title>
+    <meta
+      name="description"
+      content="Wiki moderna de farm em Deadlock 2026: Souls, timers, rotas por role, macro e playbooks."
+    />
+    <link rel="stylesheet" href="./wiki.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Deadlock Farm<br />Mastery Wiki</h1>
+        <p>Meta Mar/2026</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab active" data-tab="all">Tudo</button>
+        <button class="tab" data-tab="wiki">Wiki</button>
+        <button class="tab" data-tab="playbook">Playbook</button>
+        <button class="tab" data-tab="ref">Referencias</button>
+      </div>
+
+      <nav class="nav">
+        <a href="#intro">Introducao</a>
+        <a href="#mecanicas">Mecanicas Basicas</a>
+        <a href="#rotas">Rotas Otimizadas</a>
+        <a href="#avancadas">Estrategias Avancadas</a>
+        <a href="#erros">Erros + Counterplay</a>
+        <a href="#kpi">Treino e KPIs</a>
+        <a href="#referencias">Referencias</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle">Alternar tema</button>
+    </aside>
+
+    <main class="content">
+      <header class="hero panel" data-group="wiki">
+        <h2>Farm em Deadlock (Padrão Wiki)</h2>
+        <p>
+          Guia pratico para melhorar consistencia de Souls, controlar timers e
+          converter vantagem em objetivo sem perder wave value.
+        </p>
+      </header>
+
+      <section id="intro" class="panel" data-group="wiki">
+        <h3>1) Introducao</h3>
+        <p>
+          Em Deadlock, <strong>farm</strong> e o processo de converter tempo de
+          mapa em <strong>Souls</strong> com risco controlado. A base de
+          consistencia em ranked e: wave uptime, orb control, rotas curtas e
+          decisoes de objetivo nos marcos de tempo corretos. [Fonte:
+          deadlock.wiki/Souls] [Fonte: steamcommunity.com/app/1422450/discussions]
+        </p>
+        <div class="callout">
+          Diferenca-chave: <strong>wave clear</strong> e renda base; jungle e
+          complemento; objectives (Urn/estrutura/boss) mudam o ritmo macro.
+        </div>
+      </section>
+
+      <section id="mecanicas" class="panel" data-group="wiki">
+        <h3>2) Mecanicas Basicas</h3>
+        <ul>
+          <li>Small camp: 2:00, respawn 4 min.</li>
+          <li>Medium/Hard: 7:00, respawn 6/8 min.</li>
+          <li>Urn e janela macro: 10:00+, com ciclo de 5 min.</li>
+        </ul>
+        <p class="muted">
+          [Fontes: TalkEsport, esports.gg, Deadlock Wiki Soul_Urn]
+        </p>
+        <p>
+          <strong>Last-hit + orb control</strong> importa mais que clear cego.
+          Clear sem confirmar/defender orbs reduz seu delta economico real.
+          [Fonte: deadlock.wiki/Souls]
+        </p>
+      </section>
+
+      <section id="rotas" class="panel" data-group="wiki">
+        <h3>3) Rotas Otimizadas por Role</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Early (0-10)</th>
+              <th>Mid (10-25)</th>
+              <th>Late</th>
+              <th>Souls/min esperado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carry</td>
+              <td>Wave -> orb -> small camp -> reset lane</td>
+              <td>Wave priority + janela de objective</td>
+              <td>Side wave + estrutura segura</td>
+              <td>Medio-Alto</td>
+            </tr>
+            <tr>
+              <td>Spirit Carry</td>
+              <td>Wave first absoluto</td>
+              <td>Rotacao curta via teleporter</td>
+              <td>Split com recuo rapido</td>
+              <td>Medio-Alto estavel</td>
+            </tr>
+            <tr>
+              <td>Assassin</td>
+              <td>Wave minima + pick curto</td>
+              <td>Pick com conversao em objetivo</td>
+              <td>Flanco com reset</td>
+              <td>Variavel</td>
+            </tr>
+            <tr>
+              <td>Support/Utility</td>
+              <td>Wave state + setup de mapa</td>
+              <td>Setup de urn/rotas</td>
+              <td>Protecao de carry</td>
+              <td>Baixo-Medio</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="avancadas" class="panel" data-group="playbook">
+        <h3>4) Estrategias Avancadas</h3>
+        <h4>Cycling (Lane -> Quick extra -> Lane)</h4>
+        <p>
+          Execute loop de 30-40s: limpar wave, pegar extra mais proximo e
+          voltar antes da perda de valor da proxima wave. [Fonte:
+          steamcommunity.com/app/1422450/discussions]
+        </p>
+        <h4>Objective Farming</h4>
+        <p>
+          Fight so vale quando converte em estrutura/objetivo. Fight sem
+          conversao tende a evaporar vantagem. [Fonte: deadlock.wiki/Souls]
+        </p>
+      </section>
+
+      <section id="erros" class="panel" data-group="playbook">
+        <h3>5) Erros Comuns + Counterplay</h3>
+        <ul>
+          <li>Desvio longo por breakable -> perde wave.</li>
+          <li>Camp fora do seu spike -> clear lento e risco alto.</li>
+          <li>Fight por impulso -> sem payoff de objetivo.</li>
+          <li>Ignorar 10:00+ -> perde janela macro.</li>
+          <li>Morrer com unsecured alta -> swing negativo.</li>
+        </ul>
+      </section>
+
+      <section id="kpi" class="panel" data-group="playbook">
+        <h3>6) Treino e KPIs</h3>
+        <div class="kpi-grid">
+          <article>
+            <h4>Souls aos 10:00</h4>
+            <p>Indicador de consistencia early.</p>
+          </article>
+          <article>
+            <h4>Souls aos 20:00</h4>
+            <p>Qualidade de transicao mid game.</p>
+          </article>
+          <article>
+            <h4>Urns disputadas</h4>
+            <p>Conversao macro de economia.</p>
+          </article>
+          <article>
+            <h4>Waves perdidas</h4>
+            <p>Erro silencioso mais caro.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="referencias" class="panel" data-group="ref">
+        <h3>7) Referencias</h3>
+        <ul class="refs">
+          <li><a href="https://deadlock.wiki/Souls" target="_blank">Deadlock Wiki - Souls</a></li>
+          <li><a href="https://deadlock.wiki/Soul_Urn" target="_blank">Deadlock Wiki - Soul Urn</a></li>
+          <li><a href="https://esports.gg/guides/deadlock/complete-deadlock-objective-timing-guide/" target="_blank">esports.gg - objective timing</a></li>
+          <li><a href="https://www.talkesport.com/guides/deadlock-jungle-timers-explained-all-camps-their-respawn-times/" target="_blank">TalkEsport - jungle timers</a></li>
+          <li><a href="https://www.dexerto.com/gaming/how-jungle-camps-work-in-deadlock-2880840/" target="_blank">Dexerto - jungle camps</a></li>
+          <li><a href="https://steamcommunity.com/app/1422450/discussions/0/4758704514231003705/" target="_blank">Steam discussion - farm economy</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./wiki.js"></script>
+  </body>
+  </html>
+
