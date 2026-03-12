@@ -115,11 +115,21 @@
         <a href="#avancadas">Estrategias Avancadas</a>
         <a href="#erros">Erros + Counterplay</a>
         <a href="#kpi">Treino e KPIs</a>
+        <a href="#roleshots">Role Snapshots</a>
+        <a href="#checklist">Checklist de Partida</a>
+        <a href="#patchwatch">Patch Watchlist</a>
         <a href="#referencias">Referencias</a>
       </nav>
 
       <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
         Alternar tema
+      </button>
+      <button
+        id="compactToggle"
+        class="theme-toggle"
+        aria-label="Alternar modo compacto"
+      >
+        Modo compacto
       </button>
     </aside>
 
@@ -136,6 +146,20 @@
           Guia pratico para melhorar consistencia de Souls, controlar timers e
           converter vantagem em objetivo sem perder wave value.
         </p>
+        <div class="hero-metrics">
+          <article>
+            <strong>2:00</strong>
+            <span>Small camp spawn</span>
+          </article>
+          <article>
+            <strong>7:00</strong>
+            <span>Medium/Hard camps</span>
+          </article>
+          <article>
+            <strong>10:00+</strong>
+            <span>Urn + teleporter + macro</span>
+          </article>
+        </div>
       </header>
 
       <section id="intro" class="panel" data-group="wiki" data-title="Introducao">
@@ -284,12 +308,78 @@
       </section>
 
       <section
+        id="roleshots"
+        class="panel"
+        data-group="playbook"
+        data-title="Role Snapshots"
+      >
+        <h3>7) Role Snapshots (Execucao rapida)</h3>
+        <div class="role-grid">
+          <article>
+            <h4>Carry</h4>
+            <p><strong>Objetivo:</strong> estabilidade de renda.</p>
+            <p><strong>Regra:</strong> wave first, camp entre-wave, objective no clock.</p>
+          </article>
+          <article>
+            <h4>Spirit Carry</h4>
+            <p><strong>Objetivo:</strong> manter 2 lanes vivas sem overextend.</p>
+            <p><strong>Regra:</strong> reset curto e rotacao limpa via mobilidade.</p>
+          </article>
+          <article>
+            <h4>Assassin</h4>
+            <p><strong>Objetivo:</strong> pick com conversao.</p>
+            <p><strong>Regra:</strong> kill sem objetivo = valor parcial.</p>
+          </article>
+          <article>
+            <h4>Support</h4>
+            <p><strong>Objetivo:</strong> habilitar carry a manter soul flow.</p>
+            <p><strong>Regra:</strong> setup de mapa e proteção de recursos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="checklist"
+        class="panel"
+        data-group="playbook"
+        data-title="Checklist de Partida"
+      >
+        <h3>8) Checklist de Partida (Anti-erro)</h3>
+        <ul class="checklist">
+          <li><input type="checkbox" /> Nao perdi wave por desvio longo.</li>
+          <li><input type="checkbox" /> Contestei objetivos no clock correto.</li>
+          <li><input type="checkbox" /> Evitei morte com unsecured alta.</li>
+          <li><input type="checkbox" /> Convertei fight em estrutura/urn.</li>
+          <li><input type="checkbox" /> Mantive consistencia de farm no late.</li>
+        </ul>
+      </section>
+
+      <section
+        id="patchwatch"
+        class="panel"
+        data-group="wiki"
+        data-title="Patch Watchlist"
+      >
+        <h3>9) Patch Watchlist (manutencao de meta)</h3>
+        <p>
+          Use esta lista para validar rapidamente se o guia continua atualizado apos patch:
+        </p>
+        <ol>
+          <li>Timers de spawn/respawn (2:00, 7:00, 10:00+).</li>
+          <li>Regras de soul split, deny e unsecured conversion.</li>
+          <li>Valor e regras da Soul Urn.</li>
+          <li>Impacto de itens de clear e mobilidade no timing de rota.</li>
+          <li>Mudancas de mapa que alterem janelas de rotacao.</li>
+        </ol>
+      </section>
+
+      <section
         id="referencias"
         class="panel"
         data-group="ref"
         data-title="Referencias"
       >
-        <h3>7) Referencias</h3>
+        <h3>10) Referencias</h3>
         <ul class="refs">
           <li>
             <a href="https://deadlock.wiki/Souls" target="_blank" rel="noopener noreferrer"

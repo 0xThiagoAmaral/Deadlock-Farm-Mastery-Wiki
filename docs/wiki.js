@@ -8,6 +8,7 @@
   const crumbCurrent = document.getElementById("crumbCurrent");
   const sidebar = document.getElementById("wikiSidebar");
   const sidebarToggle = document.getElementById("sidebarToggle");
+  const compactToggle = document.getElementById("compactToggle");
 
   const sectionById = {};
   document.querySelectorAll("section[id]").forEach((section) => {
@@ -20,6 +21,10 @@
   }
 
   const savedTab = localStorage.getItem("wiki-tab") || "all";
+  const savedCompact = localStorage.getItem("wiki-compact") === "1";
+  if (savedCompact) {
+    document.body.classList.add("compact");
+  }
 
   function applyTab(tab) {
     tabs.forEach((b) => {
@@ -29,7 +34,9 @@
     });
     panels.forEach((panel) => {
       const group = panel.dataset.group || "wiki";
-      panel.hidden = !(tab === "all" || tab === group);
+      const isTabVisible = tab === "all" || tab === group;
+      panel.dataset.tabVisible = isTabVisible ? "1" : "0";
+      panel.hidden = !isTabVisible;
     });
     localStorage.setItem("wiki-tab", tab);
   }
@@ -47,7 +54,7 @@
     const term = searchInput.value.trim().toLowerCase();
     panels.forEach((panel) => {
       const text = panel.textContent?.toLowerCase() || "";
-      const tabVisible = !panel.hidden;
+      const tabVisible = panel.dataset.tabVisible !== "0";
       const match = term === "" || text.includes(term);
       panel.hidden = !(tabVisible && match);
     });
@@ -78,6 +85,19 @@
   );
 
   Object.values(sectionById).forEach((s) => observer.observe(s));
+
+  const panelRevealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          panelRevealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+  );
+  panels.forEach((panel) => panelRevealObserver.observe(panel));
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
@@ -112,6 +132,11 @@
       localStorage.setItem("wiki-theme", "light");
       themeToggle.textContent = "Alternar tema";
     }
+  });
+
+  compactToggle?.addEventListener("click", () => {
+    const enabled = document.body.classList.toggle("compact");
+    localStorage.setItem("wiki-compact", enabled ? "1" : "0");
   });
 })();
 
