@@ -1,0 +1,16 @@
+{
+  "name": "Deadlock Farm Mastery Wiki",
+  "short_name": "Deadlock Wiki",
+  "description": "Wiki premium de farm em Deadlock 2026.",
+  "start_url": "/Deadlock-Farm-Mastery-Wiki/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/Deadlock-Farm-Mastery-Wiki/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

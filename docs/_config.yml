@@ -1,5 +1,7 @@
 title: Deadlock Farm Wiki 2026
 description: Wiki prática e factual sobre farm e souls em Deadlock
+url: "https://0xthiagoamaral.github.io"
+baseurl: "/Deadlock-Farm-Mastery-Wiki"
 markdown: kramdown
 kramdown:
   input: GFM

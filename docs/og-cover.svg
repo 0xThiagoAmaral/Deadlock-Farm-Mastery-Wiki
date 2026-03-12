@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#1B2A4A"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="72" y="84" width="1056" height="462" rx="24" fill="#0F172A" fill-opacity="0.58" stroke="#334155"/>
+
+  <text x="120" y="230" fill="white" font-size="72" font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    Deadlock Farm Mastery
+  </text>
+  <text x="120" y="300" fill="#93C5FD" font-size="42" font-family="Segoe UI, Arial, sans-serif" font-weight="600">
+    Wiki Premium 2026
+  </text>
+  <text x="120" y="362" fill="#CBD5E1" font-size="30" font-family="Segoe UI, Arial, sans-serif">
+    Souls, Timers, Rotas por Role e Macro
+  </text>
+
+  <rect x="120" y="410" width="290" height="58" rx="14" fill="url(#pill)"/>
+  <text x="150" y="447" fill="white" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    Wiki + Playbook
+  </text>
+</svg>

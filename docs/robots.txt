@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://0xthiagoamaral.github.io/Deadlock-Farm-Mastery-Wiki/sitemap.xml
