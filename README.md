@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/readme-banner.svg" alt="Deadlock Farm Mastery Wiki Banner" width="100%" />
+</p>
+
 # Deadlock Farm Mastery Wiki
 
 [![Status](https://img.shields.io/badge/status-active-success)](#)
@@ -6,6 +10,39 @@
 [![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-black)](#)
 
 Guia prático e factual de **farm em Deadlock** para quem quer evoluir de forma consistente no ranked: do básico ao high-elo.
+
+## Features (Premium)
+
+<table>
+  <tr>
+    <td width="33%">
+      <h3>Souls Economy Engine</h3>
+      <p>Mecanicas de <strong>secured/unsecured souls</strong>, deny/confirm e impacto economico por fase da partida.</p>
+    </td>
+    <td width="33%">
+      <h3>Meta Timers 2026</h3>
+      <p>Rotina de clock para <strong>jungle, urn, objective windows e transicoes</strong> early-mid-late.</p>
+    </td>
+    <td width="33%">
+      <h3>Role Playbooks</h3>
+      <p>Framework de execucao por role com foco em <strong>souls/min, macro e conversao de vantagem</strong>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <h3>High-Elo Decision Matrix</h3>
+      <p>Decisao pratica de risco/recompensa: <strong>farm, invade, objective ou reset</strong>.</p>
+    </td>
+    <td width="33%">
+      <h3>Wiki + Checklist Ops</h3>
+      <p>Conteudo para estudo e uso em partida: <strong>SOPs, KPIs e revisao de replay</strong>.</p>
+    </td>
+    <td width="33%">
+      <h3>Factual Workflow</h3>
+      <p>Modelo editorial com rastreabilidade: cita fonte e marca lacuna como <code>[!todo] Pesquisar</code>.</p>
+    </td>
+  </tr>
+</table>
 
 ## O que voce encontra aqui
 
