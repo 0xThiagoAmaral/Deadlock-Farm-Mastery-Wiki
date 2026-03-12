@@ -1,35 +1,66 @@
 # Deadlock Farm Mastery Wiki
 
-Wiki prática sobre farm em Deadlock (meta 2026), com foco em:
+[![Status](https://img.shields.io/badge/status-active-success)](#)
+[![Meta](https://img.shields.io/badge/meta-Mar%202026-blue)](#)
+[![Format](https://img.shields.io/badge/format-Wiki%20%2B%20Playbook-purple)](#)
+[![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-black)](#)
 
-- **Souls e economia**
-- **Timers de jungle/objetivos**
-- **Rotas por role**
-- **Macro e tomada de decisão**
-- **Checklist competitivo (novo player -> high-elo)**
+Guia prático e factual de **farm em Deadlock** para quem quer evoluir de forma consistente no ranked: do básico ao high-elo.
 
-## Acesso rápido
+## O que voce encontra aqui
 
-- Página principal da wiki: `docs/index.md`
-- Publicação GitHub Pages: usar branch `main` + pasta `/docs`
+- **Souls e economia**: secured/unsecured, orb control e impacto de mortes.
+- **Timers e objetivos**: jungle, Urn, janelas de transicao e macro.
+- **Rotas por role**: early/mid/late com foco em consistencia de renda.
+- **Estrategia competitiva**: checklist, SOPs, playbooks e KPIs.
+- **Conteudo auditavel**: citacoes de fonte e marcacao de lacunas quando necessario.
 
-## Como publicar no GitHub Pages
+## Acesse a Wiki
 
-1. Abra `Settings` no repositório.
-2. Vá em `Pages`.
+Se o GitHub Pages estiver ativado:
+
+**https://0xthiagoamaral.github.io/Deadlock-Farm-Mastery-Wiki/**
+
+Conteudo principal no repositorio:
+
+- `docs/index.md`
+
+## Publico-alvo
+
+- Jogadores iniciantes que querem parar de "farmar no piloto automatico".
+- Intermediarios que precisam converter vantagem em objetivo.
+- High-elo que buscam reduzir erro de macro e aumentar consistencia.
+
+## Stack do projeto
+
+- Conteudo em Markdown (wiki-first)
+- Estrutura para GitHub Pages (`/docs`)
+- Configuracao Jekyll simples (`docs/_config.yml`)
+
+## Publicacao rapida (GitHub Pages)
+
+1. Abra `Settings` no repositorio.
+2. Entre em `Pages`.
 3. Em `Build and deployment`:
    - `Source`: **Deploy from a branch**
    - `Branch`: **main**
    - `Folder`: **/docs**
 4. Salve e aguarde o deploy.
 
-URL esperada:
+## Estrutura de arquivos
 
-`https://0xthiagoamaral.github.io/Deadlock-Farm-Mastery-Wiki/`
+- `docs/index.md` -> wiki principal
+- `docs/_config.yml` -> configuracao de publicacao
+- `docs/README-PUBLISH.md` -> guia curto de deploy
 
-## Estrutura
+## Roadmap
 
-- `docs/index.md` -> conteúdo wiki
-- `docs/_config.yml` -> configuração Jekyll/Pages
-- `docs/README-PUBLISH.md` -> guia rápido de deploy
+- [ ] Adicionar changelog por patch
+- [ ] Adicionar pagina de metodologia de validacao
+- [ ] Adicionar pagina de FAQ estendida por role
+- [ ] Adicionar assets proprios com licenca comercial
+
+## Aviso de uso comercial
+
+Para venda/publicacao comercial (ex.: Amazon), valide licenca de imagens e marcas de terceiros antes de distribuir.
 
